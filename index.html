@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit convertor</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <script src="js/script.bundle.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!--Nav bar-->
+    <div class="d-flex">
+        <div class="gap-2 col-2 mx-auto justify-content-center">
+            <h3>Measurement Calculator</h3>
+        </div>
+    </div>
+    
+    <nav>
+        <div class="nav nav-tabs mx-auto col-10 col-md-8 col-lg-6 mt-3" id="nav-tab" role="tablist">
+        </div>
+    </nav>
+    <!--Forms-->
+    <form id="convertor-form" class="mx-auto col-10 col-md-8 col-lg-6 mt-3">
+        <div class="alert alert-warning alert-dismissible fade show" id="alert" role="alert">
+            <strong></strong> 
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        <h1 id="heading-form">Length and distance</h1>
+
+        <div class="input-group mb-3">
+            <label class="form-check-label me-3">From </label>
+            <input id="distancefrom" type="number" value="0" class="form-control" placeholder="Enter Value"
+                aria-label="Username">
+            <select id="distancefromunit" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            </select>
+        </div>
+        <button id="swapbuttonid" onclick="swap('distance')" class="buttonswap"><img class="imageswap"
+                src="css/swap.png"></button>
+        <div class="input-group mb-3">
+            <label class="form-check-label me-4">To &nbsp;&nbsp;</label>
+            <input id="distanceto" type="number" class="form-control" value="0" placeholder="Enter Value"
+                aria-label="Username">
+            <select id="distancetounit" class="form-select form-select-sm" aria-label=".form-select-sm example">
+            </select>
+        </div>
+    </form>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+
+</html>
